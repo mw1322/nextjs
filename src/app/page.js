@@ -17,18 +17,9 @@ export default function Home() {
   }
   return (
     <main className={styles.main}>
-      {/* <User name="Manish" />
-      <User name="Rohan" />
-      <User name="Krish" /> */}
-      <p>My namse is {name}</p>
-      <button onClick={() => callfunc()}>click me</button>
-      <InnerCompt/>
-      {InnerCompt()}
+    
     </main>
   );
 }
-let User = (props) =>{
-  return (
-    <p>Nice I  am {props.name}</p>
-  );
-}
+
+
