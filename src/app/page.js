@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/navigation';
 import styles from './page.module.css'
 import {useState} from 'react';
 
@@ -10,14 +11,10 @@ export default function Home() {
     // chng = "Walia"
     setName("Manish");
   }
-  const InnerCompt = () => {
-    return (
-      <h2>Nice Movfgnie</h2>
-    );
-  }
+  
   return (
     <main className={styles.main}>
-    
+      <Link href="/about"> About</Link>
     </main>
   );
 }
