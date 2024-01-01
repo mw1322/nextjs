@@ -11,8 +11,11 @@ export default function Home() {
     router.push(path)
   }
   return (
-    <main className={styles.main}>
-    
+    <main >
+      <Link href="/about"> About</Link>
+      <br></br>
+      <button onClick={() => navigate("/about")}>About US</button><br></br>
+      <button onClick={() => navigate('/about/mypage')}>My page</button>
     </main>
   );
 }
