@@ -7,11 +7,14 @@ import { useRouter } from 'next/navigation';
 export default function Home() {
   // const [name,setName] = useState("Walia");
   const router = useRouter();
+  const navigate = (path) =>{
+    router.push(path)
+  }
   return (
     <main >
       <p>Nice</p>
       <Link href="/about"> About</Link><br></br>
-      <button onClick = {() => router.push('/about')}>About US</button>
+      <button onClick = {() => navigate('/about')}>About US</button>
      </main>
   );
 }
